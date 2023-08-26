@@ -17,7 +17,7 @@ function App() {
       <Banner />
       <RowPost url={originals} title="Netflix Originals" />
       <RowPost url={action} title="Action Movies" isSmall />
-      <RowPost url={romance} title="Romantic Movies" />
+      <RowPost url={romance} title="Romantic Movies"/>
       <RowPost url={documentaries} title="Documentaries" isSmall />
       <RowPost url={comedyMovies} title="Comedy Movies" />
       <RowPost url={animations} title="Animation Movies" />
