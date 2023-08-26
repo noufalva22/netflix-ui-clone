@@ -46,8 +46,8 @@ const RowPost = (props) => {
     <div className='row'>
       <h2>{props.title} </h2>
       <div className="posters">
-        {movies.map((item) => (
-          <img onClick={() => handleMovie(item.id)} className={props.isSmall ? 'smallPoster' : 'poster'} src={`${imageUrl}/${item.poster_path}`} alt="Movie Card" />
+        {movies.map((item, key) => (
+          <img key={key} onClick={() => handleMovie(item.id)} className={props.isSmall ? 'smallPoster' : 'poster'} src={`${imageUrl}/${item.poster_path}`} alt="Movie Card" />
         ))}
       </div>
       {urlId && <Youtube opts={opts} videoId={urlId.key} />}
